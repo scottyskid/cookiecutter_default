@@ -14,7 +14,6 @@ import time
 
 import numpy as np
 import pandas as pd
-
 import requests
 import yaml
 
@@ -32,14 +31,11 @@ __email__ = "{{cookiecutter.email}}"
 __status__ = "Development" # "Development", "Prototype", or "Production"
 
 
-def setup_logging(default_path, default_level=logging.WARNING, env_key='LOG_CFG'):
+def setup_logging(default_path, default_level=logging.WARNING):
     """Setup logging configuration
 
     """
     path = default_path
-    value = os.getenv(env_key, None)
-    if value:
-        path = value
     if path.exists():
         with open(path, 'rt') as f:
             config = yaml.safe_load(f.read())
@@ -56,7 +52,7 @@ def main():
 if __name__ == "__main__":
     script_start = time.time()
     try:
-        setup_logging(globals.BASE_DIR / 'logging_config.yaml', logging.DEBUG)
+        setup_logging(globals.BASE_DIR / 'logging_config.yaml', logging.DEBUG) # todo fix logging
         logging.info("__main__ start")
 
         main()
