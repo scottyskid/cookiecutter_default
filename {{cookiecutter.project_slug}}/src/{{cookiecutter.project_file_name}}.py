@@ -8,16 +8,17 @@ import configparser
 import logging, logging.config
 import os
 from pathlib import Path
+from pprint import pprint
 import sys
 import time
 
 import numpy as np
 import pandas as pd
-from pprint import pprint
+
 import requests
 import yaml
 
-import constants
+import globals
 
 __author__ = "{{cookiecutter.full_name}}"
 __created__ = "{{cookiecutter.date}}"
@@ -55,7 +56,7 @@ def main():
 if __name__ == "__main__":
     script_start = time.time()
     try:
-        setup_logging(constants.BASE_DIR / 'logging_config.yaml', logging.DEBUG)
+        setup_logging(globals.BASE_DIR / 'logging_config.yaml', logging.DEBUG)
         logging.info("__main__ start")
 
         main()
