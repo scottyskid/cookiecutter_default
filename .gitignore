@@ -2,3 +2,39 @@
 .Rhistory
 .RData
 .Ruserdata
+
+
+data_extract/*
+data_load/*
+data_transform/*
+logs/*
+
+# User-specific stuff for pycharm
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# User-specific files
+.Ruserdata
+
+# RStudio files
+.Rproj.user/
