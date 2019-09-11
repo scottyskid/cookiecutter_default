@@ -3,11 +3,9 @@
 .RData
 .Ruserdata
 
-
 data_extract/*
 data_load/*
 data_transform/*
-logs/*
 
 # User-specific stuff for pycharm
 .idea/**/workspace.xml
