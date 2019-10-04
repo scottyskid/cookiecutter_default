@@ -24,7 +24,6 @@ __created__ = "{{cookiecutter.date}}"
 __copyright__ = "Copyright 2019, CHE Proximity"
 __credits__ = ["{{cookiecutter.full_name}}"]
 
-__license__ = "{{cookiecutter.open_source_license}}"
 __version__ = "{{cookiecutter.version}}"
 __maintainer__ = "{{cookiecutter.full_name}}"
 __email__ = "{{cookiecutter.email}}"

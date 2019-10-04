@@ -15,5 +15,22 @@
 # status = Development # Development, Prototype, or Production
 
 
+if(!require(odbc))
+{install.packages("odbc") }
+if(!require(configr))
+{install.packages("configr") }
+if(!require(aws.s3))
+{install.packages("aws.s3") }
+if (!require(here))
+{install.packages("here")}
+
+
+#clear all variables
+
+
+rm(list = ls(all.names = TRUE))
+
+source(globals.R)
+
 
 
