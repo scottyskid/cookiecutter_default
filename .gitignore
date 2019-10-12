@@ -1,12 +1,5 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-.Rapp.history
-
-data_extract/
-data_load/
-data_transform/
+### PYTHON FILES
+__pycache__/
 
 # User-specific stuff for pycharm
 .idea/**/workspace.xml
@@ -24,9 +17,8 @@ ENV/
 env.bak/
 venv.bak/
 
-
-# History files
-.Rhistory
+# pyenv
+.python-version
 
 # Scrapy stuff:
 .scrapy
@@ -44,16 +36,12 @@ target/
 profile_default/
 ipython_config.py
 
-# pyenv
-.python-version
-
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
 #   However, in case of collaboration, if having platform-specific dependencies or dependencies
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
 #   install all needed dependencies.
 #Pipfile.lock
-
 
 # Distribution / packaging
 .Python
@@ -75,3 +63,18 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+
+### R FILES
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# User-specific files
+.Ruserdata
+
+# RStudio files
+.Rproj.user/
