@@ -8,6 +8,10 @@ __pycache__/
 .idea/**/dictionaries
 .idea/**/shelf
 
+# IDE Configurations
+.idea/
+.vscode/
+
 # Environments
 .env
 .venv
