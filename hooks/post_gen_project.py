@@ -4,6 +4,7 @@ import sys
 
 
 if __name__ == "__main__":
+    print(os.getcwd())
     SRC_DIR = Path('{{ cookiecutter.project_slug }}') / 'src'
 {%- if cookiecutter.project_type == 'python' %}
     os.remove(SRC_DIR / '{{cookiecutter.project_file_name}}.R')
