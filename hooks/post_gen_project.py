@@ -4,13 +4,13 @@ import sys
 
 
 if __name__ == "__main__":
-    SRC_DIR = Path('src')
+    SRC_DIR = Path('{{ cookiecutter.project_slug }}') / 'src'
 {%- if cookiecutter.project_type == 'python' %}
-    os.remove(SRC_DIR / '{{ cookiecutter.project_slug }}' / '{{cookiecutter.project_file_name}}.R')
-    os.remove(SRC_DIR / '{{ cookiecutter.project_slug }}' / 'globals.R')
+    os.remove(SRC_DIR / '{{cookiecutter.project_file_name}}.R')
+    os.remove(SRC_DIR / 'globals.R')
 {%- elif  cookiecutter.project_type == 'r' %}
-    os.remove(SRC_DIR / '{{ cookiecutter.project_slug }}' / '{{cookiecutter.project_file_name}}.py')
-    os.remove(SRC_DIR / '{{ cookiecutter.project_slug }}' / 'globals.py')
+    os.remove(SRC_DIR / '{{cookiecutter.project_file_name}}.py')
+    os.remove(SRC_DIR / 'globals.py')
 {%- endif %}
     print("running git init")
     os.system('git init')
