@@ -9,6 +9,7 @@ if __name__ == "__main__":
 {%- if cookiecutter.project_type == 'python' %}
     os.remove(SRC_DIR / '{{cookiecutter.project_file_name}}.R')
     os.remove(SRC_DIR / 'globals.R')
+    os.remove('{{cookiecutter.project_slug}}.Rproj')
 {%- elif  cookiecutter.project_type == 'r' %}
     os.remove(SRC_DIR / '{{cookiecutter.project_file_name}}.py')
     os.remove(SRC_DIR / 'globals.py')
